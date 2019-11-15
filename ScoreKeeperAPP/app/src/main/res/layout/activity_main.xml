@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:outlineAmbientShadowColor="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/manunited">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Man United"
+                android:textColor="#FF6688"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:id="@+id/man_united_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/manunited_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="Team Stats"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/man_fouls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="Fouls :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/man_number_of_fouls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="foulUnited"
+                android:text="+"
+
+                />
+
+            <TextView
+                android:id="@+id/man_yellow_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="Yellow Cards :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/man_number_of_yellowcards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="yellowUnited"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/man_red_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="Red Cards :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/man_number_of_red_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="redUnited"
+                android:text="+"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:onClick="goalForUnited"
+                android:text="GOAL" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            android:paddingTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/chelsea"
+
+            >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Chelsea"
+                android:textColor="#0000ff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/chelsea_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
+
+
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/chelsea_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="Team Stats"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/chel_fouls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Fouls :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/chel_number_of_fouls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="foulChelsea"
+                android:text="+"
+
+                />
+
+            <TextView
+                android:id="@+id/chel_yellow_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="Yellow Cards :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/chel_number_of_yellowcards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="+"
+                android:onClick="giveYellowChelsea"/>
+
+            <TextView
+                android:id="@+id/chel_red_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:text="Red Cards :"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/chel_number_of_red_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="11.5dp"
+                android:onClick="giveRedChelsea"
+                android:text="+" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:onClick="goalForChelsea"
+                android:text="GOAL" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp"
+        android:text="Reset"
+        android:onClick="resetScore"/>
+</RelativeLayout>
